@@ -1,0 +1,25 @@
+{
+  "name": "youtube-channel",
+  "version": "1.0.0",
+  "description": "Project to go along with the development in my Youtube Channel videos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m3fawner/youtube-channel.git"
+  },
+  "author": "Evan Williams",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/m3fawner/youtube-channel/issues"
+  },
+  "homepage": "https://github.com/m3fawner/youtube-channel#readme",
+  "dependencies": {
+    "angular": "^1.5.8"
+  },
+  "devDependencies": {
+    "webpack": "^1.13.2"
+  }
+}
