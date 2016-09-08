@@ -3,6 +3,10 @@ This repository is intended to go alongside the teachings [available on my YouTu
 
 I will tag this repo to match each video's baseline application.
 
+### Webpack
+[Intro To Webpack](https://www.youtube.com/watch?v=W91TJn71_Aw) - A high level slide overview of Webpack
+[Implementation of Webpack](https://www.youtube.com/watch?v=ptP-zVgOZD8) - Implementing our minimilistic webpack configuration & dev server
+
 ### Hello World
 [Video](https://www.youtube.com/watch?v=SsqoI0gUqR0) - An introduction as to who I am, and what I will be teaching
 
