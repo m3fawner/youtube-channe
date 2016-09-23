@@ -20,10 +20,15 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel'
+      },
+      {
+        test: /\.pug$/,
+        loader: 'pug'
       }
     ]
   },
   plugins: [new HtmlWebpackPlugin({
-    title: 'My App'
+    title: 'My App',
+    template: 'src/index.pug'
   })]
 };

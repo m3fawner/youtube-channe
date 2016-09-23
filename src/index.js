@@ -1,3 +1,6 @@
-import angular from 'angular';
-angular.module('test', []);
-console.log('Hello world2');
+import angular, { bootstrap } from 'angular';
+
+export default angular.module('m3fawner.youtube', [])
+.name;
+
+bootstrap(document, ['m3fawner.youtube']);
