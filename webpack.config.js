@@ -1,6 +1,9 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
 module.exports = {
+  entry: './src/index.ts',
+  devtool: '#source-map',
+  target: 'node',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
@@ -9,26 +12,20 @@ module.exports = {
     root: [
       path.resolve('./src'),
       path.resolve('./node_modules')
+    ],
+    extensions: ['', '.webpack.js', '.web.js', '.ts', '.tsx', '.js'],
+    alias: {}
+  },
+  module: {
+    loaders: [
+      {
+        test: /\.ts$/,
+        loader: 'ts-loader'
+      }
     ]
   },
   devServer: {
     proxy: {}
   },
-  entry: './src/index.js',
-  module: {
-    loaders: [
-      {
-        test: /\.js$/,
-        loader: 'babel'
-      },
-      {
-        test: /\.pug$/,
-        loader: 'pug'
-      }
-    ]
-  },
-  plugins: [new HtmlWebpackPlugin({
-    title: 'My App',
-    template: 'src/index.pug'
-  })]
+  plugins: [new webpack.optimize.OccurrenceOrderPlugin(), new webpack.HotModuleReplacementPlugin()]
 };
